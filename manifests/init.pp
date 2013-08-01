@@ -31,8 +31,8 @@ class python_tools {
   }
 
   python_tools::source_install { 'keyczar':
-    repo_url      => 'https://code.google.com/p/keyczar',
-    repo_name     => 'keyczar',
-    install_path  => 'python',    
+    repo_url    => 'https://code.google.com/p/keyczar',
+    repo_name   => 'keyczar',
+    setup_path  => 'python',
   }
 }

@@ -26,17 +26,15 @@
 #
 # Sample Usage:
 #  For a standard install from github:
-#
 #    python_tools::source_install { 'simplejson':
 #      repo_url  => 'https://github.com/simplejson/simplejson.git',
 #    }
 #
 #  For a package like keyczar, where setup.py is not in the root of the repository:
-#
 #    python_tools::source_install { 'keyczar':
-#     repo_url      => 'https://code.google.com/p/keyczar',
-#      repo_name     => 'keyczar',
-#      install_path  => 'python',    
+#      repo_url   => 'https://code.google.com/p/keyczar',
+#      repo_name  => 'keyczar',
+#      setup_path => 'python',
 #    }
 #
 #  For an install with mercurial:

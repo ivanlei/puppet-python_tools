@@ -1,0 +1,12 @@
+name          'ivanlei-python_tools'
+version       '1.0.0'
+summary       'Puppet module for installing a package of python tools'
+description   'Puppet module for installing a package of python tools'
+source        'https://github.com/ivanlei/puppet-python_tools.git'
+project_page  'https://github.com/ivanlei/puppet-python_tools'
+license       'http://unlicense.org/'
+
+dependency    'puppetlabs/stdlib', '>=4.1.0'
+dependency    'puppetlabs/git', '>=0.0.2'
+dependency    'puppetlabs/vcsrepo', '>=0.1.2'
+dependency    'ivanlei/python_pip', '>=1.0.0'

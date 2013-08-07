@@ -1,0 +1,20 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    puppetlabs/git (0.0.2)
+    puppetlabs/stdlib (4.1.0)
+    puppetlabs/vcsrepo (0.1.2)
+
+GIT
+  remote: git://github.com/ivanlei/puppet-python_pip.git
+  ref: master
+  sha: 05f9effd50c5caecdd19355163e06d4ab308491e
+  specs:
+    ivanlei/python_pip (1.0.0)
+
+DEPENDENCIES
+  ivanlei/python_pip (>= 0)
+  puppetlabs/git (>= 0)
+  puppetlabs/stdlib (>= 0)
+  puppetlabs/vcsrepo (>= 0)
+

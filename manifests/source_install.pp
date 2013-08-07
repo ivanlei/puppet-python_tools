@@ -40,16 +40,18 @@
 #  For an install with mercurial:
 #    python_tools::source_install { 'scapy':
 #      repo_url => 'http://hg.secdev.org/scapy',
-#      provider => 'hg',    
+#      provider => 'hg',
 #    }
 #
-define python_tools::source_install( 
+define python_tools::source_install(
   $repo_url,
   $repo_name     = $name,
-  $setup_path  = '',
+  $setup_path    = '',
   $provider      = 'git',
   )
 {
+  require git
+
   validate_string($repo_url, $repo_name, $setup_path, $provider)
 
   $repo_path = "/tmp/${repo_name}"
